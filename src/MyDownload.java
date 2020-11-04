@@ -1,12 +1,12 @@
 
 
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Scanner;
 
 /**
+ * @description 创建文件，启动线程
  * @author xuxingjun
  * @data 2020/10/19  -  22:12
  */

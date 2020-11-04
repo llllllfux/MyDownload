@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
+ * @description 编写线程类所需要的属性，实现Runnable接口，重写run方法
  * @author xuxingjun
  * @data 2020/10/19  -  22:33
  */

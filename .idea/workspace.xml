@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0ffb916-bfe9-4198-a10f-9ef0dfe70fcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myTask02/DownThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myTask02/DownThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myTask02/MyDownload.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myTask02/MyDownload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myTask02/TestStream.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DownThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DownThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyDownload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyDownload.java" afterDir="false" />
     </list>
@@ -108,6 +103,7 @@
       <workItem from="1603185145309" duration="16183000" />
       <workItem from="1603244682041" duration="7731000" />
       <workItem from="1604488494717" duration="6592000" />
+      <workItem from="1604495329331" duration="410000" />
     </task>
     <servers />
   </component>
