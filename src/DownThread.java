@@ -27,42 +27,19 @@ class DownThread implements Runnable {
             readerResource = new RandomAccessFile(readFileName, "rw");
             writeResource = new RandomAccessFile(writeFileName, "rw");
             readerResource.seek(startIndex);
-            writeResource.seek(startIndex);
-//            System.out.println(readerResource.getFilePointer());
-//            System.out.println(writeResource.getFilePointer());
-//            System.out.println(startIndex+Thread.currentThread().getName());
-//            System.out.println(endIndex + Thread.currentThread().getName());
+            writeResource.seek(startIndex);;
             byte[] buffer = new byte[1024];
             int len;
 
-            while ((len = readerResource.read(buffer)) != -1 && readerResource.getFilePointer() <= endIndex) {
-//                System.out.println("线程" + Thread.currentThread().getName() + "  进入");
-
-//                long l =writeResource.getFilePointer();
-//                System.out.println(readerResource.getFilePointer());
+            while ((len = readerResource.read(buffer)) != -1 && writeResource.getFilePointer() <= endIndex) {
                 writeResource.write(buffer,0,len);
-
-//                if (writeResource.getFilePointer() == endIndex ){
-//
-//                    System.out.println(Thread.currentThread().getName() + "进入判断");
-////                    System.out.println(endIndex);
-////                    System.out.println(writeResource.getFilePointer());
-//                    readerResource.close();
-//                    writeResource.close();
-//                    break;
-//                }
             }
-//            System.out.println(writeResource.getFilePointer());
+            System.out.println("线程" + Thread.currentThread().getName() + "  执行完成！");
+
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-//            System.out.println(startIndex+Thread.currentThread().getName());
-//            try {
-//                System.out.println(writeResource.getFilePointer()+Thread.currentThread().getName());
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            System.out.println(endIndex + Thread.currentThread().getName());
+
 
             if (readerResource != null){
                 try {
@@ -79,7 +56,6 @@ class DownThread implements Runnable {
                     e.printStackTrace();
                 }
             }
-            System.out.println("线程" + Thread.currentThread().getName() + "  执行完成！");
         }
 
     }
